@@ -12,9 +12,6 @@
 // ==========================================
 
 
-
-
-
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de laatste (vijfde) loop het woord "klaar!"
 // Verwachte uitkomsten:
@@ -25,8 +22,10 @@
 // klaar!
 // ==========================================
 
-
-
+for (let i = 0; i <= 4; i++) {
+    console.log("Loop");
+}
+console.log("klaar!");
 
 
 // ==========================================
@@ -45,11 +44,17 @@
 // >> 9
 // ==========================================
 
-
-
-
-
-// ==========================================
+for (let i = 0; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(i);
+    } else if (i % 3 === 0) {
+        console.log("buzz");
+    } else if (i % 5 === 0) {
+        console.log("fizz");
+    } else {
+        console.log(i);
+    }
+}
 // Opdracht 4 (BONUS): schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
 // Echter, voor veelvouden van 3 print je "Fizz" in plaats van het nummer, en voor veelvouden van 5 print je "Buzz".
 // Voor getallen die zowel een veelvoud van 3 als van 5 zijn, print je "FizzBuzz"
