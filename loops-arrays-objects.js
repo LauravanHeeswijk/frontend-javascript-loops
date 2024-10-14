@@ -65,17 +65,17 @@ for (let i = 0; i < scores.length; i++) {
 // Opdracht 2
 // Schrijf een script die e-mailadressen genereert voor al onze medewerkers. Sla dit op in een nieuwe property "email" die je toevoegt aan iedere medewerker.
 
-        const NOVIEmployees = [
-            {firstName: 'Nova', lastName: 'Eeken'},
-            {firstName: 'Sam', lastName: 'Barnhoorn'},
-            {firstName: 'Tessa', lastName: 'Steur'},
-            {firstName: 'Mark', lastName: 'Rensen'},
-        ];
+const NOVIEmployees = [
+    {firstName: 'Nova', lastName: 'Eeken'},
+    {firstName: 'Sam', lastName: 'Barnhoorn'},
+    {firstName: 'Tessa', lastName: 'Steur'},
+    {firstName: 'Mark', lastName: 'Rensen'},
+];
 for (let i = 0; i < NOVIEmployees.length; i++) {
     let email = NOVIEmployees[i].firstName + "." + NOVIEmployees[i].lastName + "@novi.nl";
     NOVIEmployees[i].email = email;
 }
-console.log (NOVIEmployees);
+console.log(NOVIEmployees);
 
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
 // Vóór het script zie je de originele objecten,
